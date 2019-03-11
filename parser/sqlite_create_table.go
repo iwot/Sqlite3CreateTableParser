@@ -491,7 +491,7 @@ func lexerNext(state *State) tokenT {
 			return lexerPunctuation(state)
 		}
 
-		if symbolIsAlpha(c) {
+		if symbolIsIdentifier(c) {
 			return lexerAlpha(state)
 		}
 
